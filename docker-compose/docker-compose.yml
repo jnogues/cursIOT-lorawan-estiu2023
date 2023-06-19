@@ -39,7 +39,7 @@ services:
       - DOCKER_INFLUXDB_INIT_ORG=my_ORG
       - DOCKER_INFLUXDB_INIT_BUCKET=my_Bucket
       
-  grafana:
+  grafana:   # usuari i password per 1a vegada, admin admin
     image: grafana/grafana
     container_name: mygrafana
     ports:
