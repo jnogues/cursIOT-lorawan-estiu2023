@@ -1,4 +1,9 @@
-//abp whitecatboard N2
+// Curs estiu 2023. Formacio professorat
+// ttn ABP whitecatboard N2
+// guarda frame counter
+// afegit #define hal_init LMICHAL_init a project_config
+// Cal ajustar a Europa a project_config
+// jnogues@irp.cat
 
 #include <lmic.h>
 #include <hal/hal.h>
