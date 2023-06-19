@@ -31,12 +31,12 @@ docker run -d -p 1883:1883 -v C:\Users\mengano\Desktop\my_docker\mosquitto:/mosq
 *   Per influxdb (demana nou password 1a vegada):
 
 ```text-plain
-docker run -d -p 8086:8086 -v /home/mengano/my_docker/influxdb/data:/var/lib/influxdb2 -v /home/mengano/my_docker/influxdb/config:/etc/influxdb2 --name=myinfluxdb --restart unless-stopped influxdb:2.7
+docker run -d -p 8086:8086 -v C:\Users\mengano\Desktop\my_docker\influxdb\data:/var/lib/influxdb2 -v C:\Users\mengano\Desktop\my_docker\influxdb\config:/etc/influxdb2 --name=myinfluxdb --restart unless-stopped influxdb:2.7
 ```
 
 *   Per Grafana, usuari i password per defecte (admin admin):
 
 ```text-plain
-docker run -d  -p 3000:3000 -e "GF_AUTH_ANONYMOUS_ENABLED=true" --name=mygrafana --restart unless-stopped -v C:\Users\super\Desktop\my_docker\grafana:/var/lib/grafana grafana/grafana
+docker run -d  -p 3000:3000 -e "GF_AUTH_ANONYMOUS_ENABLED=true" --name=mygrafana --restart unless-stopped -v C:\Users\mengano\Desktop\my_docker\grafana:/var/lib/grafana grafana/grafana
 ```
 
