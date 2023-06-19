@@ -15,28 +15,28 @@
 *   Reiniciem Windows.
 *   Si no està obert, iniciem **Docker Desktop**.
 *   Obrim el **CMD** (Simbolo del sistema).
-*   Suposem que a W10 som l'usuari **mengano**.
+*   Suposem que a W10 som l'usuari **lora**.
 *   Per instal·lar i iniciar el contenidor de node-red utilitzem aquest comandament: 
 
 ```text-plain
-docker run -d -p 1880:1880 -v C:\Users\mengano\Desktop\my_docker\nodered00:/data --restart unless-stopped --name mynodered00 nodered/node-red
+docker run -d -p 1880:1880 -v C:\Users\lora\Desktop\my_docker\nodered00:/data --restart unless-stopped --name mynodered00 nodered/node-red
 ```
 
 *   Per instal·lar i iniciar el contenidor de mosquitto:
 
 ```text-plain
-docker run -d -p 1883:1883 -v C:\Users\mengano\Desktop\my_docker\mosquitto:/mosquitto/ --restart unless-stopped --name mymosquitto eclipse-mosquitto
+docker run -d -p 1883:1883 -v C:\Users\lora\Desktop\my_docker\mosquitto:/mosquitto/ --restart unless-stopped --name mymosquitto eclipse-mosquitto
 ```
 
 *   Per influxdb (demana nou password 1a vegada):
 
 ```text-plain
-docker run -d -p 8086:8086 -v C:\Users\mengano\Desktop\my_docker\influxdb\data:/var/lib/influxdb2 -v C:\Users\mengano\Desktop\my_docker\influxdb\config:/etc/influxdb2 --name=myinfluxdb --restart unless-stopped influxdb:2.7
+docker run -d -p 8086:8086 -v C:\Users\lora\Desktop\my_docker\influxdb\data:/var/lib/influxdb2 -v C:\Users\lora\Desktop\my_docker\influxdb\config:/etc/influxdb2 --name=myinfluxdb --restart unless-stopped influxdb:2.7
 ```
 
 *   Per Grafana, usuari i password per defecte (admin admin):
 
 ```text-plain
-docker run -d  -p 3000:3000 -e "GF_AUTH_ANONYMOUS_ENABLED=true" --name=mygrafana --restart unless-stopped -v C:\Users\mengano\Desktop\my_docker\grafana:/var/lib/grafana grafana/grafana
+docker run -d  -p 3000:3000 -e "GF_AUTH_ANONYMOUS_ENABLED=true" --name=mygrafana --restart unless-stopped -v C:\Users\lora\Desktop\my_docker\grafana:/var/lib/grafana grafana/grafana
 ```
 
