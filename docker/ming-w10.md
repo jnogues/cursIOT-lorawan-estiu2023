@@ -1,4 +1,4 @@
-### **DOCKER a W10- MING**
+## **DOCKER a W10- MING**
 
 *   Fem una carpeta a l'escriptori amb nom **my\_docker**.
 *   Dins de **my_docker** fem 4 carpetes: **nodered00**, **mosquitto**, **influxdb** i **grafana**.
