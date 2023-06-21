@@ -9,4 +9,16 @@
 9. Sortim amb `exit`.
 10. Tornem a entrar amb `lora@xx.xx.xx.xx`.
 11. Fem `sudo apt update` i `sudo apt upgrade`.
-12.  
+12. Ara ja anem a per la instal·lacio de docker.
+13. 'sudo apt-get update'
+14. `sudo apt-get install ca-certificates curl gnupg`
+15. `sudo install -m 0755 -d /etc/apt/keyrings`
+16. `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
+17. `sudo chmod a+r /etc/apt/keyrings/docker.gpg`
+18. `echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null `
+20. `sudo apt-get update`
+21. `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+22. 
