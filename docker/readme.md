@@ -1,7 +1,7 @@
 ### **DOCKER a W10- MING**
 
 *   Fem una carpeta a l'escriptori amb nom **my\_docker**.
-*   Dins de **my\_docker** fem 4 carpetes: **nodered00**, **mosquitto**, **influxdb** i **grafana**.
+*   Dins de **my_docker** fem 4 carpetes: **nodered00**, **mosquitto**, **influxdb** i **grafana**.
 *   Dins de **mosquitto** fem 3 carpetes: **config**, **data** i **log.** Dins de config, cal fer un fitxer de text pla (amb el bloc de notes), de nom **mosquitto.conf**, amb el següent contingut:
 
 **allow\_anonymous true**  
