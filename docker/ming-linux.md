@@ -5,7 +5,7 @@
 5. Anem a mosquitto: `cd mosquitto`
 6. Fem `mkdir config` , `mkdir data` i `mkdir log`.
 7. Anem a config `cd config`
-8. Fem un fitxer de text amn `nano mosquitto.cong`. Contingut del fitxer:
+8. Fem un fitxer de text amb `nano mosquitto.conf`. Contingut del fitxer:
 
 **allow\_anonymous true**  
 **listener 1883**  
