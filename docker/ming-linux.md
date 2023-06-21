@@ -22,7 +22,7 @@
 13. Donem permissos `sudo chown -R 1000:1000 /home/lora/my_docker/nodered00`
 14. Ara cal obrir els ports del tallafocs del Clouding: 1880 a 1882 (http), 1883 (TCP), 8086 (http), 3000 (http), 8000(TCP), 9000(http), 9443(TCP), o bé els obrim tots alhora, del 1 al 65535: [Cómo crear una regla de firewall](https://help.clouding.io/hc/es/articles/360013590619-C%C3%B3mo-crear-una-regla-de-firewall?source=search&auth_token=eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjo5MTkwNjIsInVzZXJfaWQiOjg4OTE1Mjg2ODIwMTIsInRpY2tldF9pZCI6MTM3ODk0LCJjaGFubmVsX2lkIjo2MywidHlwZSI6IlNFQVJDSCIsImV4cCI6MTY4OTkzOTAwM30._PUWPiBGeIBxDHqkOe13fSWbpmeo2PIiIE_FTvIBONs)
 15. Creem un volum per docker: `docker volume create portainer_data`
-16. Iniciem portainer, demana un password per usuari admin (p.ex Curslora2023#):
+16. Iniciem portainer, demana un password de 12 caràcters per usuari admin (p.ex Curslora2023#):
     
 `docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 --name=myportainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce`
 
@@ -42,5 +42,4 @@
 18. Iniciem grafana:
 
 `docker run -d  --user '1001' -p 3000:3000 -e "GF_AUTH_ANONYMOUS_ENABLED=true" --name=mygrafana --restart unless-stopped -v /home/lora/my_docker/grafana:/var/lib/grafana grafana/grafana`
-   
-19.  
+
