@@ -22,3 +22,10 @@
 23. Ara per tal d'executar docker sense privilegis: `sudo groupadd docker`i `sudo usermod -aG docker $USER`
 24. Cal sortir amb `exit` i tornar a entrar amb `ssh lora@xx.xx.xx.xx`
 25. Probem `docker run hello-world`, si va, tot OK.
+26. Ara instal·lem docker-compose.
+27. `sudo apt-get update`
+28. `sudo apt-get install docker-compose-plugin`
+29. Verifiquem la versió `docker compose version`
+30. Perquè docker comenci al boot: `sudo systemctl enable docker.service` i `sudo systemctl enable containerd.service`
+31. JA HO TENIM!!!!!!!
+32. 
