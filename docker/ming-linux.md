@@ -16,4 +16,8 @@
 9. Guardem amb `CTRL O` i `CTRL X`
 10. Anem a influxdb `cd /home/lora/my_docker/influxdb`
 11. Fem 2 carpetes: `mkdir data` i `mkdir config`
+12. Iniciem node-red:
+`docker run -d -p 1880:1880 -v /home/lora/my_docker/nodered00:/data --restart unless-stopped --name mynodered00 nodered/node-red`
+
+14. 
     
