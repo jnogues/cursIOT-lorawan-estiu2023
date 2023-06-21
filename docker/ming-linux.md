@@ -13,7 +13,7 @@
 **persistence\_location /mosquitto/data/**  
 **log\_dest file /mosquitto/log/mosquitto.log**
 
-9. Guardem amb ^CTRL O` i `CTRL X`
+9. Guardem amb `CTRL O` i `CTRL X`
 10. Anem a influxdb `cd /home/lora/my_docker/influxdb`
 11. Fem 2 carpetes: `mkdir data` i `mkdir config`
     
