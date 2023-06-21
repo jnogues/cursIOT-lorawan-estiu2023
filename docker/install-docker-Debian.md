@@ -10,7 +10,7 @@
 10. Tornem a entrar amb `ssh lora@xx.xx.xx.xx`.
 11. Fem `sudo apt update` i `sudo apt upgrade`.
 12. Ara ja anem a per la instal·lacio de docker.
-13. 'sudo apt-get update'
+13. `sudo apt-get update`
 14. `sudo apt-get install ca-certificates curl gnupg`
 15. `sudo install -m 0755 -d /etc/apt/keyrings`
 16. `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
