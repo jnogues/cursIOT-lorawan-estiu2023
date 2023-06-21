@@ -20,7 +20,7 @@
 11. Fem 2 carpetes: `mkdir data` i `mkdir config`
 12. Tornem a la carpeta d'usuari `cd`
 13. Donem permissos `sudo chown -R 1000:1000 /home/lora/my_docker/nodered00`
-14. Ara cal obrir els ports del tallafocs del Clouding: 1880 a 1882 (http), 1883 (All TCP), 8086 (http), 3000 (http)
+14. Ara cal obrir els ports del tallafocs del Clouding: 1880 a 1882 (http), 1883 (All TCP), 8086 (http), 3000 (http) o bé els obrim tots alhora, del 1 al 65535: (Cómo crear una regla de firewall)[https://help.clouding.io/hc/es/articles/360013590619-C%C3%B3mo-crear-una-regla-de-firewall?source=search&auth_token=eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjo5MTkwNjIsInVzZXJfaWQiOjg4OTE1Mjg2ODIwMTIsInRpY2tldF9pZCI6MTM3ODk0LCJjaGFubmVsX2lkIjo2MywidHlwZSI6IlNFQVJDSCIsImV4cCI6MTY4OTkzOTAwM30._PUWPiBGeIBxDHqkOe13fSWbpmeo2PIiIE_FTvIBONs]
 15. 15. Iniciem node-red:
 
 `docker run -d -p 1880:1880 -v /home/lora/my_docker/nodered00:/data --restart unless-stopped --name mynodered00 nodered/node-red`
