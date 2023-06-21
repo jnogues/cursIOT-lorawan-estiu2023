@@ -16,8 +16,21 @@
 9. Guardem amb `CTRL O` i `CTRL X`
 10. Anem a influxdb `cd /home/lora/my_docker/influxdb`
 11. Fem 2 carpetes: `mkdir data` i `mkdir config`
-12. Iniciem node-red:
+12. Tornem a la carpeta d'usuari `cd`
+13. Donem permissos `sudo chown -R 1000:1000 /home/lora/my_docker/nodered00`
+14. Ara cal obrir els ports del tallafocs del Clouding: 1880 a 1882 (http), 1883 (All TCP),
+15. 15. Iniciem node-red:
+
 `docker run -d -p 1880:1880 -v /home/lora/my_docker/nodered00:/data --restart unless-stopped --name mynodered00 nodered/node-red`
 
-14. 
+14. Iniciem mosquitto:
     
+`docker run -d -p 1883:1883 -v /home/lora/my_docker/mosquitto:/mosquitto/ --restart unless-stopped --name mymosquitto eclipse-mosquitto`
+    
+16. Iniciem influxdb:
+
+`docker run -d -p 8086:8086 -v /home/lora/my_docker/influxdb/data:/var/lib/influxdb2 -v /home/lora/my_docker/influxdb/config:/etc/influxdb2 --name=myinfluxdb --restart unless-stopped influxdb:2.7`
+
+17. 
+   
+18. 
