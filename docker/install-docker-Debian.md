@@ -28,4 +28,4 @@
 29. Verifiquem la versió `docker compose version`
 30. Perquè docker comenci al boot: `sudo systemctl enable docker.service` i `sudo systemctl enable containerd.service`
 31. JA HO TENIM!!!!!!!
-32. 
+
