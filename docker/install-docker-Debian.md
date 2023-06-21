@@ -1,3 +1,5 @@
+## Configuració inicial de Debian i instal·lació de docker i docker-compose.
+
 1. Entreu a clouding.io i us doneu d'alta.
 2. Feu servir 'oferta d'un VPS gratis per un mes.
 3. Trieu Debian 12.
