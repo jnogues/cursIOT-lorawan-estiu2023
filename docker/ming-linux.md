@@ -1,4 +1,4 @@
-### Com instal·lar MING a linux DEBIAN 12 de Clouding.io
+## Com instal·lar MING a linux DEBIAN 12 de Clouding.io
 
 1. Entrem al servidor `ssh lora@xx.xx.xx.xx`
 2. Fem un directori per docker: `mkdir /home/lora/my_docker`
