@@ -1,5 +1,5 @@
-## Configuració inicial de Debian, instal·lació de docker i docker-compose.
-# Configuració de Debian
+# Configuració inicial de Debian, instal·lació de docker i docker-compose.
+## Configuració de Debian
 1. Entreu a clouding.io i us doneu d'alta.
 2. Feu servir 'oferta d'un VPS gratis per un mes.
 3. Trieu Debian 12.
@@ -11,12 +11,12 @@
 9. Sortim amb `exit`.
 10. Tornem a entrar amb `ssh lora@xx.xx.xx.xx`.
 11. Fem `sudo apt update` i `sudo apt upgrade`.
-
+## Instal·lació de docker, via ràpida
 12. Ara ja anem a per la instal·lacio de docker.
 13. Tenim l'opció **ràpida**, que es aquesta:
 14. `curl -fsSL https://get.docker.com -o get-docker.sh`
 15. `sudo sh get-docker.sh`
-
+## Instal·lació de docker, via lenta
 16. Si ho volem fer a ma, pas a pas:
 17. `sudo apt-get update`
 18. `sudo apt-get install ca-certificates curl gnupg`
@@ -26,10 +26,12 @@
 22. `echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null `
 23. `sudo apt-get update`
 24. `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+## Post-instal·lació
 25. Per saber si va bé: `sudo docker run hello-world`
 26. Ara per tal d'executar docker sense privilegis: `sudo groupadd docker`i `sudo usermod -aG docker $USER`
 27. Cal sortir amb `exit` i tornar a entrar amb `ssh lora@xx.xx.xx.xx`
 28. Probem `docker run hello-world`, si va, tot OK.
+## Instal·lació de docker-compose
 29. Ara instal·lem docker-compose.
 30. `sudo apt-get update`
 31. `sudo apt-get install docker-compose-plugin`
