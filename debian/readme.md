@@ -11,10 +11,12 @@
 9. Sortim amb `exit`.
 10. Tornem a entrar amb `ssh lora@xx.xx.xx.xx`.
 11. Fem `sudo apt update` i `sudo apt upgrade`.
+
 12. Ara ja anem a per la instal·lacio de docker.
 13. Tenim l'opció **ràpida**, que es aquesta:
 14. `curl -fsSL https://get.docker.com -o get-docker.sh`
 15. `sudo sh get-docker.sh`
+
 16. Si ho volem fer a ma, pas a pas:
 17. `sudo apt-get update`
 18. `sudo apt-get install ca-certificates curl gnupg`
