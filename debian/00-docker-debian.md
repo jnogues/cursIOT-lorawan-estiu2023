@@ -28,10 +28,11 @@
 24. `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 ## Post-instal·lació
 25. Per saber si va bé: `sudo docker run hello-world`
-26. Ara per tal d'executar docker sense privilegis: `sudo groupadd docker`i `sudo usermod -aG docker $USER`
-27. Cal sortir amb `exit` i tornar a entrar amb `ssh lora@xx.xx.xx.xx`
-28. Probem `docker run hello-world`, si va, tot OK.
-29. Perquè docker comenci al boot: `sudo systemctl enable docker.service` i `sudo systemctl enable containerd.service`
+26. Per saber la versió: `docker --version`
+27. Ara per tal d'executar docker sense privilegis: `sudo groupadd docker`i `sudo usermod -aG docker $USER`
+28. Cal sortir amb `exit` i tornar a entrar amb `ssh lora@xx.xx.xx.xx`
+29. Probem `docker run hello-world`, si va, tot OK.
+30. Perquè docker comenci al boot: `sudo systemctl enable docker.service` i `sudo systemctl enable containerd.service`
 ## Instal·lació de docker-compose
 30. En principi docker-compose ja hauria d'estar instal·lat. Verifiquem-ho amb `docker compose version`
 31. JA HO TENIM!!!!!!!
