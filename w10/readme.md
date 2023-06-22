@@ -1,5 +1,5 @@
-# INSTAL·LAR DOCKER I MING a W10
-
+# COM INSTAL·LAR DOCKER I MING a W10
+## Creació de directoris
 *   Fem una carpeta a l'escriptori amb nom **my\_docker**.
 *   Dins de **my_docker** fem 4 carpetes: **nodered00**, **mosquitto**, **influxdb** i **grafana**.
 *   Dins de **mosquitto** fem 3 carpetes: **config**, **data** i **log.** Dins de config, cal fer un fitxer de text pla (amb el bloc de notes), de nom **mosquitto.conf**, amb el següent contingut:
@@ -16,24 +16,25 @@
 *   Si no està obert, iniciem **Docker Desktop**.
 *   Obrim el **CMD** (Simbolo del sistema).
 *   Suposem que a W10 som l'usuari **lora**.
+## Node-red
 *   Per instal·lar i iniciar el contenidor de node-red utilitzem aquest comandament: 
 
 ```text-plain
 docker run -d -p 1880:1880 -v C:\Users\lora\Desktop\my_docker\nodered00:/data --restart unless-stopped --name mynodered00 nodered/node-red
 ```
-
+## Mosquitto
 *   Per instal·lar i iniciar el contenidor de mosquitto:
 
 ```text-plain
 docker run -d -p 1883:1883 -v C:\Users\lora\Desktop\my_docker\mosquitto:/mosquitto/ --restart unless-stopped --name mymosquitto eclipse-mosquitto
 ```
-
+## Influxdb
 *   Per influxdb (demana nou password 1a vegada):
 
 ```text-plain
 docker run -d -p 8086:8086 -v C:\Users\lora\Desktop\my_docker\influxdb\data:/var/lib/influxdb2 -v C:\Users\lora\Desktop\my_docker\influxdb\config:/etc/influxdb2 --name=myinfluxdb --restart unless-stopped influxdb:2.7
 ```
-
+## Grafana
 *   Per Grafana, usuari i password per defecte (admin admin):
 
 ```text-plain
