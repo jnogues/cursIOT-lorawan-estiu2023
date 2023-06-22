@@ -1,6 +1,6 @@
 # Configuració inicial de Debian, instal·lació de docker i docker-compose.
 ## Configuració de Debian
-1. Entreu a clouding.io i us doneu d'alta.
+1. Entreu a [clouding.io](https://clouding.io/) i us doneu d'alta.
 2. Feu servir 'oferta d'un VPS gratis per un mes.
 3. Trieu Debian 12.
 4. Entreu per primera vegada per ssh amb `ssh root@xx.xx.xx.xx`. Cal introduir nou password (p.ex. Curs2023#).
