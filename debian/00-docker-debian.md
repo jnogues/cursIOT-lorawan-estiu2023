@@ -33,6 +33,6 @@
 28. Probem `docker run hello-world`, si va, tot OK.
 29. Perquè docker comenci al boot: `sudo systemctl enable docker.service` i `sudo systemctl enable containerd.service`
 ## Instal·lació de docker-compose
-30. En principi docker-compose ja hauria d'estar instal·lat. Verifiquem-ho amb `docker compose --version`
+30. En principi docker-compose ja hauria d'estar instal·lat. Verifiquem-ho amb `docker compose version`
 31. JA HO TENIM!!!!!!!
 
