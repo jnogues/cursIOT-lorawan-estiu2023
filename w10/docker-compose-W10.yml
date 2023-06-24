@@ -1,0 +1,52 @@
+version: '3.8'
+services:
+  node-red:
+    image: nodered/node-red:latest
+    container_name: mynodered00
+    ports:
+      - 1880:1880
+    restart: unless-stopped
+    volumes:
+      - C:\Users\lora\Desktop\my_docker\nodered00:/data
+    environment:
+      - TZ=Europe/Madrid
+     
+  mqtt:
+    image: eclipse-mosquitto:latest
+    container_name: mymosquitto
+    ports:
+      - 1883:1883
+    restart: unless-stopped
+    volumes:
+      - C:\Users\lora\Desktop\my_docker\mosquitto:/mosquitto
+    environment:
+      - TZ=Europe/Madrid
+
+  influxdb:
+    image: influxdb:2.7
+    container_name: myinfluxdb
+    ports:
+      - 8086:8086
+    restart: unless-stopped
+    volumes:
+      - C:\Users\lora\Desktop\my_docker\influxdb\data:/var/lib/influxdb2
+      - C:\Users\lora\Desktop\my_docker\influxdb\config:/etc/influxdb2
+    environment:
+      - TZ=Europe/Madrid
+      - DOCKER_INFLUXDB_INIT_MODE=setup 
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      - DOCKER_INFLUXDB_INIT_PASSWORD=12345678
+      - DOCKER_INFLUXDB_INIT_ORG=my_ORG
+      - DOCKER_INFLUXDB_INIT_BUCKET=my_Bucket
+      
+  grafana:   # usuari i password per 1a vegada, admin admin
+    image: grafana/grafana
+    container_name: mygrafana
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    volumes:
+      - C:\Users\lora\Desktop\my_docker\grafana:/var/lib/grafana grafana/grafana
+    environment:
+      - TZ=Europe/Madrid
+      - GF_AUTH_ANONYMOUS_ENABLED=true
