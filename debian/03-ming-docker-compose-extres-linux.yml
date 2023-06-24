@@ -59,8 +59,18 @@ services:
       - PGID=1000
       - TZ=Europe/Madrid
     volumes:
-      - /path/to/appdata/config:/config
+      - /home/lora/my_docker/heimdall:/config
     ports:
       - 3002:80
       - 443:443
     restart: unless-stopped
+
+trilium:
+    image: zadam/trilium
+    restart: always
+    environment:
+      - TRILIUM_DATA_DIR=/home/node/trilium-data
+    ports:
+      - 3001:8080
+    volumes:
+      - /home/lora/my_docker/trilium/trilium-data
