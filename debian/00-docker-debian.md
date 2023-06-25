@@ -3,7 +3,7 @@
 1. Entreu a [clouding.io](https://clouding.io/) i us doneu d'alta.
 2. Feu servir l'oferta d'un VPS gratis per un mes.
 3. Trieu Debian 12, 1 core, 10GB de disc.
-4. Entreu per primera vegada per ssh amb `ssh root@xx.xx.xx.xx`. Cal introduir nou password (p.ex. Curs2023#).
+4. Entreu per primera vegada per ssh amb `ssh root@xx.xx.xx.xx`. Cal introduir nou password (p.ex. Curs2023#). Amb W10 ho podem fer pel CMD, powershell o amb [mobaXterm](https://mobaxterm.mobatek.net/download.html).
 5. Feu `apt update` i `apt upgrade`.
 6. Ara crearem un nou usuari `apt adduser lora`. Responeu al que us demana, alerta amb el password (p.ex. Curs2023#).
 7. Ara afegim usuari **lora** a sudoers `adduser lora sudo`.
