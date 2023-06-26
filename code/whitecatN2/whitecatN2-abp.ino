@@ -141,8 +141,8 @@ void tts_send(osjob_t* j)
   memset(dades, 0, 4); //esborra estat
   dades[0] = 0;
   dades[1] = 1;
-  dades[2] = 2;
-  dades[3] = 3;
+  dades[2] = random(10,99);// humitat random
+  dades[3] = random(15,35);// temperatura random
   fcnt_up();
   LMIC_setTxData2(1, dades, 4, 0);// port 1
   Serial.println(F("[RFM95] Packet queued"));
