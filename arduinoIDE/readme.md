@@ -12,7 +12,7 @@
 ## Llibreies amb instal·lació manual (descàrrega a Discord)
 * simpleTimer.
 * Grove_BME280.
-## Llibreries a instal·lar pel pel gestor de llibreries de l'IDE (+ info a Discord)
+## Llibreries a instal·lar pel gestor de llibreries de l'IDE (+ info a Discord)
 * MCCI LoRaWAN LMIC library 4.1.1
 * Heltec ESP32 Dev-Boards 1.1.1
   
