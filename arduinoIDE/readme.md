@@ -1,6 +1,8 @@
-# Llibreries i  plaques per instal·lar.
+# IDE, llibreries i  plaques per instal·lar.
+## IDE
+* Instal·leu l'Arduino [IDE 2.1.0](https://www.arduino.cc/en/software).
 ## Gestor de plaques
-1. Afegir a preferències:
+* Afegir a preferències:
 
 `https://github.com/HelTecAutomation/CubeCell-Arduino/releases/download/V1.5.0/package_CubeCell_index.json`
 
