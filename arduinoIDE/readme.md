@@ -13,8 +13,8 @@
 * simpleTimer.
 * Grove_BME280.
 ## Llibreries a instal·lar pel gestor de llibreries de l'IDE (+ info a Discord)
-* MCCI LoRaWAN LMIC library 4.1.1
-* Heltec ESP32 Dev-Boards 1.1.1
+* MCCI LoRaWAN LMIC library 4.1.1 , necessària pels ESP32 genèrics amb xip SX1276
+* Heltec ESP32 Dev-Boards 1.1.1 , els __Heltec ESP32 Wifi LoRa V3 porten xip SX1262 i han d'utilitzar la llibreria de Heltec.__
 
 * Per la llibreria MCCI cal configurar el fitxer de text **C:\Users\lora\Documents\Arduino\libraries\MCCI_LoRaWAN_LMIC_library\project_config** perquè quedi així:
 ```
