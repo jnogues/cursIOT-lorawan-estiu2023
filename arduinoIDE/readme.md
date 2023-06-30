@@ -1,6 +1,7 @@
 # IDE, llibreries i  plaques per instal·lar.
 ## IDE
 * Instal·leu l'Arduino [IDE 2.1.0](https://www.arduino.cc/en/software).
+* Si instal·leu l'IDE en linux,al final cal seguir aquestes [instruccions.](http://community.heltec.cn/t/wireless-stick-lite-v3-reboots-after-uploading-a-simple-code/11982/10)   
 ## Gestor de plaques
 * Per tal de tenir suport a les ESP32 i Heltec afegir a preferències:
 
