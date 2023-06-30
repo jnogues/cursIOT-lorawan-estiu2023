@@ -16,7 +16,7 @@
 * MCCI LoRaWAN LMIC library 4.1.1
 * Heltec ESP32 Dev-Boards 1.1.1
 
-* Per la llibreria MCCI cal configurar el fitxer de text **C:\Users\lora\Documents\Arduino\libraries\MCCI_LoRaWAN_LMIC_library\project_config** :
+* Per la llibreria MCCI cal configurar el fitxer de text **C:\Users\lora\Documents\Arduino\libraries\MCCI_LoRaWAN_LMIC_library\project_config** perquè quedi així:
 ```
 // project-specific definitions
 #define CFG_eu868 1
