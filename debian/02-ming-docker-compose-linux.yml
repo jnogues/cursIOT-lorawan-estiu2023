@@ -33,11 +33,7 @@ services:
       - /home/lora/my_docker/influxdb/config:/etc/influxdb2
     environment:
       - TZ=Europe/Madrid
-      - DOCKER_INFLUXDB_INIT_MODE=setup 
-      - DOCKER_INFLUXDB_INIT_USERNAME=admin
-      - DOCKER_INFLUXDB_INIT_PASSWORD=12345678
-      - DOCKER_INFLUXDB_INIT_ORG=my_ORG
-      - DOCKER_INFLUXDB_INIT_BUCKET=my_Bucket
+      # - DOCKER_INFLUXDB_INIT_MODE=setup 
       
   grafana:   # usuari i password per 1a vegada, admin admin
     image: grafana/grafana
