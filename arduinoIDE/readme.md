@@ -17,8 +17,8 @@
 * Heltec ESP32 Dev-Boards 1.1.1
 
 * Per la llibreria MCCI cal configurar el fitxer de text `C:\Users\lora\Documents\Arduino\libraries\MCCI_LoRaWAN_LMIC_library\project_config` :
-  ```
-  // project-specific definitions
+```
+// project-specific definitions
 #define CFG_eu868 1
 //#define CFG_us915 1
 //#define CFG_au915 1
@@ -29,7 +29,6 @@
 #define CFG_sx1276_radio 1
 //#define LMIC_USE_INTERRUPTS
 #define hal_init LMICHAL_init
-
 ```
     
   
