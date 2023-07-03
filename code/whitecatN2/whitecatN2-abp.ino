@@ -23,8 +23,8 @@ void os_getDevEui (u1_t* buf) { }
 void os_getDevKey (u1_t* buf) { }
 
 #define uS_TO_S_FACTOR 1000000  /* Conversion factor for micro seconds to seconds */
-#define TIME_TO_SLEEP  10*60//15*60 temps que dorm en segons
-#define TIME_ALIVE 40*1000 //temps despert en ms
+#define TIME_TO_SLEEP  1*60//1*60 temps que dorm en segons, per tant un minut
+#define TIME_ALIVE 40*1000 //temps despert en ms, per tant 40s, potser millor reduir
 
 static osjob_t sendjob;
 
