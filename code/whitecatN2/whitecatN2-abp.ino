@@ -30,7 +30,7 @@ static osjob_t sendjob;
 
 // Schedule TX every this many seconds (might become longer due to duty
 // cycle limitations).
-const unsigned TX_INTERVAL = 60;//temps entre enviaments
+const unsigned TX_INTERVAL = 60;//temps entre enviaments, necessari si no dorm
 
 // Pin mapping
 #define NSS_GPIO        9
