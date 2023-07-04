@@ -23,8 +23,8 @@ void os_getDevEui (u1_t* buf) { }
 void os_getDevKey (u1_t* buf) { }
 
 #define uS_TO_S_FACTOR 1000000  /* Conversion factor for micro seconds to seconds */
-#define TIME_TO_SLEEP  1*60//1*60 temps que dorm en segons, per tant un minut
-#define TIME_ALIVE 40*1000 //temps despert en ms, per tant 40s, potser millor reduir
+#define TIME_TO_SLEEP  2*60//1*60 temps que dorm en segons, per tant un minut
+#define TIME_ALIVE 20*1000 //temps despert en ms, per tant 40s, potser millor reduir
 
 static osjob_t sendjob;
 
@@ -276,7 +276,7 @@ void lmicInit()
   os_init();
   // Reset the MAC state. Session and pending data transfers will be discarded.
   LMIC_reset();
-  LMIC_setClockError(MAX_CLOCK_ERROR * 5 / 100); // A treure
+  //LMIC_setClockError(MAX_CLOCK_ERROR * 5 / 100); // A treure??, sembla que si
   // Set static session parameters. Instead of dynamically establishing a session
   // by joining the network, precomputed session parameters are be provided.
 #ifdef PROGMEM
