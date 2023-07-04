@@ -276,7 +276,9 @@ void lmicInit()
   os_init();
   // Reset the MAC state. Session and pending data transfers will be discarded.
   LMIC_reset();
-  //LMIC_setClockError(MAX_CLOCK_ERROR * 5 / 100); // A treure??, sembla que si
+  //Aquests 2 paràmetres sembla que fa funcionar downlink!!
+  LMIC_setClockError(MAX_CLOCK_ERROR * 1 / 100); // A treure ??
+  LMIC.rxDelay = 5;//????
   // Set static session parameters. Instead of dynamically establishing a session
   // by joining the network, precomputed session parameters are be provided.
 #ifdef PROGMEM
