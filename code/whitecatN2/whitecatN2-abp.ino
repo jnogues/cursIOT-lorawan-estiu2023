@@ -358,7 +358,7 @@ void lmicInit()
   LMIC.dn2Dr = DR_SF9;
 
   // Set data rate and transmit power for uplink
-  LMIC_setDrTxpow(DR_SF12, 14);
+  LMIC_setDrTxpow(DR_SF10, 14);//DR_SF7, DR_SF8, DR_SF9, DR_SF10, a evitar(DR_SF11, DR_SF12)
 
   LMIC.seqnoUp = fcnt_read();//LLEGEIXO FRAME COUNTER A EEPROM
   // Start job
