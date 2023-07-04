@@ -352,6 +352,7 @@ void lmicInit()
 
   // Disable link check validation
   LMIC_setLinkCheckMode(0);
+  LMIC_setAdrMode(0);
 
   // TTN uses SF9 for its RX2 window.
   LMIC.dn2Dr = DR_SF9;
