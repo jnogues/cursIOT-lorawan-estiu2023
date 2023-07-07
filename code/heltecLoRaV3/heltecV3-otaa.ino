@@ -191,7 +191,7 @@ void loop()
 uint16_t readVBAT()
 {
   digitalWrite(ADCCTRLpin, LOW);
-  uint16_t kk = analogRead(VBATpin);
+  uint16_t kk = analogRead(VBATpin);////float kkk = analogReadMilliVolts(VBATpin);
   digitalWrite(ADCCTRLpin, HIGH);
   return kk;
 }
