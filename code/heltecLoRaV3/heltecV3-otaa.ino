@@ -5,7 +5,7 @@
 // jnogues@irp.cat
 
 #include "LoRaWan_APP.h"
-uint32_t license[4]={ 0x00000000,0x0000000,0x00000000,0x00000000};
+uint32_t license[4]={ 0x00000000,0x0000000,0x00000000,0x00000000};//https://resource.heltec.cn/search
 
 /* OTAA para*/
 uint8_t devEui[] = { 0x00, 0xB3, 0x00, 0x7E, 0x00, 0x00, 0xDB, 0x08 };//msb
