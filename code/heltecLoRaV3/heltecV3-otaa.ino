@@ -30,7 +30,7 @@ DeviceClass_t  loraWanClass = CLASS_A;
 uint32_t appTxDutyCycle = 120*1000;//temps dormint en ms
 
 /*OTAA or ABP*/
-bool overTheAirActivation = true;
+bool overTheAirActivation = true;//Tria ABP o OTAA
 
 /*ADR enable*/
 bool loraWanAdr = true;//false
