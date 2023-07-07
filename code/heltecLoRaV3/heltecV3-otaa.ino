@@ -33,7 +33,7 @@ uint32_t appTxDutyCycle = 120*1000;//temps dormint en ms
 bool overTheAirActivation = true;//true per OTAA, false per ABP
 
 /*ADR enable*/
-bool loraWanAdr = true;//false
+bool loraWanAdr = true;//ADR activat
 
 /* Indicates if the node is sending confirmed or unconfirmed messages */
 bool isTxConfirmed = false;
@@ -60,7 +60,7 @@ uint8_t appPort = 2;
 * Note, that if NbTrials is set to 1 or 2, the MAC will not decrease
 * the datarate, in case the LoRaMAC layer did not receive an acknowledgment
 */
-uint8_t confirmedNbTrials = 8;
+uint8_t confirmedNbTrials = 8;// a l'exemple està a 4
 
 #define VBATpin 1
 #define ADCCTRLpin 37
@@ -111,7 +111,7 @@ void downLinkDataHandle(McpsIndication_t *mcpsIndication)
 
 void setup() 
 {
-  setCpuFrequencyMhz(80);
+  //setCpuFrequencyMhz(80);
   esp_err_t esp_bluedroid_disable();
   esp_err_t esp_bt_controller_disable();
   esp_err_t esp_wifi_stop();
@@ -141,6 +141,7 @@ void loop()
       LoRaWAN.init(loraWanClass,loraWanRegion);
       //LoRaWAN.setDataRateForNoADR(DR_4);
       //DR_0 SF12
+      //DR_1 SF11
       //DR_2 SF10
       //DR_3 SF9
       //DR_4 SF8
